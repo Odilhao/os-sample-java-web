@@ -15,6 +15,6 @@ node {
            archive 'target/*.jar'
    }
            stage('Publish') {
- nexusArtifactUploader artifacts: [[artifactId: 'os-sample-java-web-war-${BUILD_ID}', classifier: 'latest', file: 'target/ROOT.war', type: 'war']], credentialsId: '7534a4df-22db-4cb1-9b4e-6398541b74d9', groupId: 'org.oc-ci.main', nexusUrl: '${NEXUS_URL}', nexusVersion: 'nexus3', protocol: 'http', repository: 'upload-jenkins', version: '0.1'
+ nexusArtifactUploader artifacts: [[artifactId: 'os-sample-java-web-war-${BUILD_ID}', classifier: 'latest', file: 'target/ROOT.war', type: 'war']], credentialsId: '83e208c4-0567-31c6-b0ff-d2c9ae65258b', groupId: 'org.cx.main', nexusUrl: 'nexus.apps.cx.4linux.com.br', nexusVersion: 'nexus3', protocol: 'http', repository: 'upload-jenkins', version: '0.1'
    }
     }
